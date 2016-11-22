@@ -1,12 +1,12 @@
 {
-  "name": "simple-media-share",
+  "name": "simple-media-browser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Node.js based media browser",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Merlin Beutlberger",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.5",
@@ -14,8 +14,16 @@
     "express-hbs": "^1.0.3",
     "node-dir": "^0.1.16"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandomByte/simple-media-browser.git"
+  },
   "devDependencies": {
     "eslint": "^3.1.0",
     "eslint-config-google": "^0.6.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/RandomByte/simple-media-browser/issues"
+  },
+  "homepage": "https://github.com/RandomByte/simple-media-browser#readme"
 }
