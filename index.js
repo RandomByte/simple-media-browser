@@ -5,7 +5,8 @@ var path = require("path"),
 	oApp = express();
 
 oApp.use("/lib/bootstrap", express.static(path.join(__dirname, "node_modules", "bootstrap", "dist")));
-oApp.use("/lib", express.static(path.join(__dirname, "public", "lib")));
+oApp.use("/lib/tether", express.static(path.join(__dirname, "node_modules", "tether", "dist")));
+oApp.use("/lib/jquery", express.static(path.join(__dirname, "node_modules", "jquery", "dist")));
 
 oApp.set("view engine", "jade");
 
