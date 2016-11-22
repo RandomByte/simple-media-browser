@@ -1,0 +1,25 @@
+<nav aria-label="Pagination" style="text-align: center;">
+	<ul class="pagination">
+		<li class="page-item {{#if bFirstPage}}disabled{{/if}}">
+			<a class="page-link" href="/{{iPreviousPage}}" aria-label="Previous">
+				<span aria-hidden="true">&laquo;</span>
+				<span class="sr-only">Previous</span>
+			</a>
+		</li>
+		{{#each aPages}}
+			{{#if bCurrent}}
+			<li class="page-item active">
+				<a class="page-link" href="/{{iPage}}">{{iPage}}<span class="sr-only">(current)</span></a>
+			</li>
+			{{else}}
+			<li class="page-item"><a class="page-link" href="/{{iPage}}">{{iPage}}</a></li>
+			{{/if}}
+		{{/each}}
+		<li class="page-item {{#if bLastPage}}disabled{{/if}}">
+			<a class="page-link" href="/{{iNextPage}}" aria-label="Next">
+				<span aria-hidden="true">&raquo;</span>
+				<span class="sr-only">Next</span>
+			</a>
+		</li>
+	</ul>
+</nav>
